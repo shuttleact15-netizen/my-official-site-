@@ -29,13 +29,7 @@ body {
     font-family:"Inter","Noto Sans JP",sans-serif;
     color:var(--text);
     /* 生成画像を背景に適用 */
-    /* 背景画像は残しつつ、薄い白ベールを重ねて文字とのコントラストを安定させる */
-    background:
-        linear-gradient(
-            rgba(244,244,241,.78),
-            rgba(244,244,241,.78)
-        ),
-        url('bg.jpg') center top / cover no-repeat fixed var(--bg);
+    background: url('bg.jpg') center top / cover no-repeat fixed var(--bg);
     line-height:1.7;
     -webkit-font-smoothing:antialiased;
     overflow-x:hidden;
@@ -1887,3 +1881,50 @@ span:last-child {
     }
 
 }
+
+/* ========================================
+   Background readability — text color only
+   ======================================== */
+
+/* 背景画像の明るい部分でも文字が埋もれないよう、
+   メインコンテンツの薄い文字だけ少し濃く調整。レイアウト/UIは変更しない。 */
+.nav a { color:#3f3f3f; }
+.logo span { color:#666; }
+.hero-label { color:#4f4f4f; }
+.hero-kicker { color:#666; }
+.hero h1 span:not(.hero-kicker) { color:#6a6a65; }
+.text-link-secondary { color:#555550; }
+.hero-description { color:#4c4c48; }
+.hero-meta { color:#666; }
+.hero-scroll-cue { color:#666; }
+.section-number { color:#666; }
+.large-text em { color:#666660; }
+.about-description p { color:#4b4b47; }
+.about-scroll-cue { color:#666660; }
+.about-scroll-arrow { color:#4b4b47; }
+.info-row span { color:#666660; }
+.about-channels-heading p { color:#666660; }
+.about-channel-main small { color:#666660; }
+.about-channel-destination { color:#3f3f3b; }
+.about-channel-status { color:#555d55; }
+.about-channel-arrow { color:#444440; }
+.skills-intro p { color:#4f4f4b; }
+.skill-index { color:#666660; }
+.skill-tags span { color:#444440; }
+.cert-label { color:#666660; }
+.cert-list { color:#444440; }
+.services-intro span { color:#666660; }
+.services-intro p { color:#4f4f4b; }
+.service-number { color:#666660; }
+.service-arrow { color:#555550; }
+.service-body p { color:#4f4f4b; }
+.service-tags span { color:#4f4f4b; }
+.process-intro p { color:#4f4f4b; }
+.process-step > span { color:#666660; }
+.process-step p { color:#4f4f4b; }
+.works-header p { color:#4f4f4b; }
+.works-count { color:#666660; }
+.visual-placeholder { color:#555550; }
+.work-meta { color:#666660; }
+.work-info p { color:#4f4f4b; }
+.work-status { color:#666660; }

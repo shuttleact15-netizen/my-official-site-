@@ -1,0 +1,2294 @@
+---
+const navItems = [
+  { label: 'About', href: '#about' },
+  { label: 'Skills', href: '#skills' },
+  { label: 'Services', href: '#services' },
+  { label: 'Works', href: '#works' },
+  { label: 'Contact', href: '#contact' },
+];
+---
+
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Anjieeeeen - 福岡を拠点に活動する学生エンジニア・フリーランサー。Webサイト制作、Pythonによる自動化、ITサポートなどを行っています。"
+    />
+    <title>Anjieeeeen — Student Engineer / Freelancer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script is:inline src="/script.js"></script>
+  </head>
+  <body>
+    <div class="page-progress" id="pageProgress" aria-hidden="true"></div>
+    <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+    <header class="header" id="header">
+      <div class="header-inner">
+        <a href="#top" class="logo">Anjieeeeen<span>.</span></a>
+
+        <nav class="nav" id="nav">
+          {navItems.map((item) => (
+            <a href={item.href}>
+              <span class="nav-label">{item.label}</span>
+            </a>
+          ))}
+        </nav>
+
+        <button
+          class="menu-toggle"
+          id="menuToggle"
+          aria-label="メニューを開く"
+          aria-expanded="false"
+          aria-controls="nav"
+        >
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="top">
+        <div class="hero-grid" aria-hidden="true"></div>
+        <div class="hero-orb hero-orb-one" aria-hidden="true"></div>
+        <div class="hero-orb hero-orb-two" aria-hidden="true"></div>
+
+        <div class="hero-inner">
+          <div class="hero-copy">
+            <div class="hero-label">
+              <span class="hero-label-line"></span>
+              <span class="status-dot"></span>
+              AVAILABLE FOR WORK
+            </div>
+
+            <h1>
+              <span class="hero-kicker">Independent digital creator</span>
+              Building things<br />
+              <span>that work.</span>
+            </h1>
+
+            <div class="hero-bottom">
+              <p class="hero-description">
+                福岡を拠点に活動する学生エンジニア。<br />
+                Web開発・業務自動化・ITサポートを中心に、
+                アイデアを実際に動く形へ落とし込みます。
+              </p>
+
+              <div class="hero-actions">
+                <a href="#works" class="text-link magnetic">
+                  View selected works
+                  <span>↗</span>
+                </a>
+
+                <a href="#contact" class="text-link text-link-secondary magnetic">
+                  Contact / Inquiry
+                  <span>↗</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <aside class="hero-panel" aria-label="Selected work preview">
+            <div class="hero-panel-top">
+              <span>Selected work</span>
+              <span>2026</span>
+            </div>
+            <div class="hero-panel-visual">
+              <span class="panel-shape panel-shape-one"></span>
+              <span class="panel-shape panel-shape-two"></span>
+              <span class="panel-shape panel-shape-three"></span>
+            </div>
+            <div class="hero-panel-meta">
+              <strong>Studio Portfolio</strong>
+              <small>Brand identity / Web design</small>
+            </div>
+          </aside>
+        </div>
+
+        <div class="hero-line"></div>
+
+        <div class="hero-meta">
+          <span>FUKUOKA, JAPAN</span>
+          <span>STUDENT ENGINEER / FREELANCER</span>
+          <span>2026</span>
+        </div>
+      </section>
+
+      <section id="about" class="section about">
+        <div class="section-heading">
+          <span class="section-number">01</span>
+          <h1>About</h1>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-intro">
+            <p class="large-text">
+              技術を使って、<br />
+              <em>面倒をシンプルに。</em>
+            </p>
+
+            <span class="about-accent-line"></span>
+
+            <div class="about-description">
+              <p>
+                福岡でIT・情報系の専門技術を学んでいる学生エンジニアです。<br />
+                学業と並行して、個人・法人向けのWeb制作や業務自動化などに取り組んでいます。
+              </p>
+
+              <p>
+                「とりあえず作る」のではなく、目的や使う人を考えながら、<br />
+                必要なものを必要なだけ作ることを大切にしています。
+              </p>
+            </div>
+
+            <div class="about-scroll-cue">
+              <span class="about-scroll-line"></span>
+              <span>SCROLL TO NEXT</span>
+              <span class="about-scroll-arrow">↓</span>
+            </div>
+          </div>
+
+          <div class="about-content">
+            <div class="about-info">
+              <div class="info-row">
+                <span>NAME</span>
+                <strong>Anjieeeeen</strong>
+              </div>
+
+              <div class="info-row">
+                <span>LOCATION</span>
+                <strong>Fukuoka, Japan</strong>
+              </div>
+
+              <div class="info-row">
+                <span>ROLE</span>
+                <strong>Student Engineer / Freelancer</strong>
+              </div>
+
+              <div class="info-row">
+                <span>FOCUS</span>
+                <strong>Web / Python / Automation / Cloud</strong>
+              </div>
+            </div>
+
+            <div class="about-channels" id="official-channels">
+              <div class="about-channels-heading">
+                <span>CONTACT / OFFICIAL CHANNELS</span>
+                <p>お問い合わせ手段・宛先</p>
+              </div>
+
+              <div class="about-channel-list">
+                <a href="#" class="about-channel is-preparing" aria-label="Google Form お問い合わせフォーム 準備中">
+                  <span class="about-channel-icon about-channel-icon-form" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none">
+                      <path d="M7 3.5h7.5L19 8v12.5H7z" stroke="currentColor" stroke-width="1.6" />
+                      <path d="M14 3.5V8h5M10 12h6M10 15h6M10 18h4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" />
+                    </svg>
+                  </span>
+
+                  <span class="about-channel-main">
+                    <strong>Google Form</strong>
+                    <small>お問い合わせフォーム</small>
+                  </span>
+
+                  <span class="about-channel-destination">お問い合わせフォームへのリンク</span>
+                  <span class="about-channel-status">PREPARING</span>
+                  <span class="about-channel-arrow">↗</span>
+                </a>
+
+                <a href="#" class="about-channel is-preparing" aria-label="X Twitter Anjieeeeen_dev 準備中">
+                  <span class="about-channel-icon about-channel-icon-x" aria-hidden="true">X</span>
+
+                  <span class="about-channel-main">
+                    <strong>X (旧Twitter)</strong>
+                    <small>SNS / 活動情報</small>
+                  </span>
+
+                  <span class="about-channel-destination">@Anjieeeeen_dev</span>
+                  <span class="about-channel-status">PREPARING</span>
+                  <span class="about-channel-arrow">↗</span>
+                </a>
+
+                <a href="#" class="about-channel is-preparing" aria-label="GitHub Anjieeeeen 準備中">
+                  <span class="about-channel-icon about-channel-icon-github" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M12 2.5a9.5 9.5 0 0 0-3 18.51c.47.09.65-.2.65-.45v-1.63c-2.65.58-3.21-1.13-3.21-1.13-.43-1.1-1.05-1.39-1.05-1.39-.86-.59.06-.58.06-.58.95.07 1.45.98 1.45.98.85 1.45 2.22 1.03 2.76.79.09-.61.33-1.03.6-1.27-2.12-.24-4.35-1.06-4.35-4.72 0-1.04.37-1.89.98-2.56-.1-.24-.43-1.21.09-2.53 0 0 .8-.26 2.62.98a9.12 9.12 0 0 1 4.77 0c1.82-1.24 2.62-.98 2.62-.98.52 1.32.19 2.29.09 2.53.61.67.98 1.52.98 2.56 0 3.67-2.24 4.48-4.37 4.71.34.3.64.87.64 1.76v2.61c0 .25.17.55.65.45A9.5 9.5 0 0 0 12 2.5Z"/>
+                    </svg>
+                  </span>
+
+                  <span class="about-channel-main">
+                    <strong>GitHub</strong>
+                    <small>Projects / Code</small>
+                  </span>
+
+                  <span class="about-channel-destination">github.com/Anjieeeeen</span>
+                  <span class="about-channel-status">PREPARING</span>
+                  <span class="about-channel-arrow">↗</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section skills">
+        <div class="section-heading">
+          <span class="section-number">02</span>
+          <h1>Skills</h1>
+        </div>
+
+        <div class="skills-intro">
+          <p>
+            Web開発からPython、自動化、クラウドまで。
+            現在の開発環境と、実際に使用している技術です。
+          </p>
+        </div>
+
+        <div class="skills-list">
+          <div class="skill-group">
+            <div class="skill-index">01</div>
+            <div>
+              <h3>Frontend</h3>
+              <div class="skill-tags">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JavaScript</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <div class="skill-index">02</div>
+            <div>
+              <h3>Development</h3>
+              <div class="skill-tags">
+                <span>Python</span>
+                <span>Flutter</span>
+                <span>Git</span>
+                <span>GitHub</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <div class="skill-index">03</div>
+            <div>
+              <h3>Environment</h3>
+              <div class="skill-tags">
+                <span>VS Code</span>
+                <span>Cursor</span>
+                <span>Linux</span>
+                <span>Windows</span>
+                <span>macOS</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <div class="skill-index">04</div>
+            <div>
+              <h3>Cloud &amp; AI</h3>
+              <div class="skill-tags">
+                <span>AWS</span>
+                <span>ChatGPT</span>
+                <span>GitHub Copilot</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="certifications">
+          <span class="cert-label">CERTIFICATIONS</span>
+          <div class="cert-list">
+            <span>基本情報技術者試験</span>
+            <span>ITパスポート</span>
+            <span>AWS Certified Cloud Practitioner</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="section services">
+        <div class="section-heading">
+          <span class="section-number">03</span>
+          <h1>Services</h1>
+        </div>
+
+        <div class="services-intro">
+          <span>WHAT I CAN BUILD</span>
+          <p>目的に合わせて、見た目だけではなく「使いやすさ」まで設計します。</p>
+        </div>
+
+        <div class="services-list">
+          <article class="service">
+            <div class="service-top">
+              <span class="service-number">01</span>
+              <span class="service-arrow">↗</span>
+            </div>
+            <div class="service-body">
+              <h3>Web Development</h3>
+              <p>
+                LPやコーポレートサイトなど、
+                HTML / CSS / JavaScriptを使ったWebサイトを制作します。
+              </p>
+              <div class="service-tags">
+                <span>LP</span>
+                <span>Responsive</span>
+                <span>HTML / CSS</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="service">
+            <div class="service-top">
+              <span class="service-number">02</span>
+              <span class="service-arrow">↗</span>
+            </div>
+            <div class="service-body">
+              <h3>Automation</h3>
+              <p>
+                Pythonを使ったデータ収集や、
+                Excel・スプレッドシートなどの定型業務を自動化します。
+              </p>
+              <div class="service-tags">
+                <span>Python</span>
+                <span>Scraping</span>
+                <span>Automation</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="service">
+            <div class="service-top">
+              <span class="service-number">03</span>
+              <span class="service-arrow">↗</span>
+            </div>
+            <div class="service-body">
+              <h3>IT Support</h3>
+              <p>
+                PC環境や開発環境の構築、
+                AWSなどクラウドに関する基礎的なサポートを行います。
+              </p>
+              <div class="service-tags">
+                <span>Setup</span>
+                <span>Cloud</span>
+                <span>Environment</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section process" id="process">
+        <div class="section-heading">
+          <span class="section-number">04</span>
+          <h2>Process</h2>
+        </div>
+
+        <div class="process-intro">
+          <p>相談から公開まで、必要な工程をシンプルに。</p>
+        </div>
+
+        <div class="process-list">
+          <article class="process-step">
+            <span>01</span>
+            <div>
+              <h3>Discover</h3>
+              <p>目的・課題・必要な機能を整理します。</p>
+            </div>
+          </article>
+
+          <article class="process-step">
+            <span>02</span>
+            <div>
+              <h3>Design</h3>
+              <p>情報設計とUIを考え、使いやすい形に落とし込みます。</p>
+            </div>
+          </article>
+
+          <article class="process-step">
+            <span>03</span>
+            <div>
+              <h3>Build</h3>
+              <p>実装・動作確認・レスポンシブ対応まで進めます。</p>
+            </div>
+          </article>
+
+          <article class="process-step">
+            <span>04</span>
+            <div>
+              <h3>Refine</h3>
+              <p>公開前に細部を整え、完成度を高めます。</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="works" class="section works">
+        <div class="section-heading">
+          <span class="section-number">05</span>
+          <h1>Selected Works</h1>
+        </div>
+
+        <div class="works-header">
+          <p>
+            制作したWebサイトや個人開発プロジェクトを
+            順次掲載していきます。
+          </p>
+          <span class="works-count">02 PROJECTS</span>
+        </div>
+
+        <div class="works-list">
+          <article class="work">
+            <div class="work-visual">
+              <div class="visual-placeholder">
+                <span>PROJECT 01</span>
+              </div>
+            </div>
+
+            <div class="work-info">
+              <div class="work-meta">
+                <span>01 / WEB</span>
+                <span>2026</span>
+              </div>
+
+              <h3>Landing Page</h3>
+              <p>レスポンシブ対応を想定したサンプルランディングページ。</p>
+              <span class="work-status">COMING SOON</span>
+            </div>
+          </article>
+
+          <article class="work">
+            <div class="work-visual">
+              <div class="visual-placeholder">
+                <span>PROJECT 02</span>
+              </div>
+            </div>
+
+            <div class="work-info">
+              <div class="work-meta">
+                <span>02 / PYTHON</span>
+                <span>2026</span>
+              </div>
+
+              <h3>Automation Tool</h3>
+              <p>Pythonを利用した個人開発の業務効率化ツール。</p>
+              <span class="work-status">COMING SOON</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <div class="contact-inner">
+          <span class="contact-label">06 / CONTACT</span>
+
+          <h2>
+            Have a project<br />
+            <em>in mind?</em>
+          </h2>
+
+          <p>
+            Web制作、業務自動化、その他ITに関するご相談など、
+            まずはお気軽にお問い合わせください。
+          </p>
+
+          <a href="#about" class="contact-button">
+            <span>Get in touch</span>
+            <span>↗</span>
+          </a>
+
+          <div class="contact-links">
+            <span class="contact-links-label">ELSEWHERE</span>
+            <a href="#about">About / Official channels</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <a href="#top" class="back-to-top" aria-label="ページ上部へ戻る">↑</a>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <span>© 2026 Anjieeeeen.</span>
+        <span>Fukuoka, Japan</span>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<style is:global>
+  :root {
+    --bg: #efece7;
+    --surface: rgba(255,255,255,0.38);
+    --surface-strong: rgba(255,255,255,0.7);
+    --surface-2: #e8e4de;
+    --text: #111827;
+    --muted: #5f6770;
+    --line: rgba(17,24,39,0.12);
+    --dark: #111827;
+    --accent: #5d6d7c;
+    --radius-control: 4px;
+    --radius-panel: 6px;
+    --max-width: 1240px;
+    --ease: cubic-bezier(.2,.7,.2,1);
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+  }
+
+  body {
+    font-family: "Inter", "Noto Sans JP", sans-serif;
+    color: var(--text);
+    background:
+      linear-gradient(180deg, rgba(255,255,255,0.18), rgba(255,255,255,0.04)),
+      url('/bg.jpg') center top / cover no-repeat fixed;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+    position: relative;
+  }
+
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(240,236,231,0.08);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  button {
+    font: inherit;
+  }
+
+  ::selection {
+    background: #111;
+    color: #fff;
+  }
+
+  .page-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #111;
+    z-index: 2000;
+  }
+
+  .cursor-glow {
+    position: fixed;
+    width: 260px;
+    height: 260px;
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    background: radial-gradient(circle, rgba(0,0,0,.055), transparent 68%);
+  }
+
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: .35s ease;
+  }
+
+  .header.scrolled {
+    background: rgba(247,245,241,0.56);
+    backdrop-filter: blur(18px);
+    border-bottom: 1px solid rgba(17,24,39,0.09);
+  }
+
+  .header-inner {
+    width: min(calc(100% - 64px), var(--max-width));
+    height: 84px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+    border-bottom: 1px solid rgba(17,24,39,0.12);
+  }
+
+  .logo {
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: -.05em;
+    transition: transform .3s var(--ease);
+  }
+
+  .logo:hover {
+    transform: translateY(-2px);
+  }
+
+  .logo span {
+    color: #888;
+  }
+
+  .nav {
+    position: relative;
+    isolation: isolate;
+    display: flex;
+    align-items: center;
+    gap: 0;
+    padding: 8px 18px 8px 22px;
+  }
+
+  .nav::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    clip-path: polygon(0 0, calc(100% - 14px) 0, 100% 50%, calc(100% - 14px) 100%, 0 100%, 11px 50%);
+    background: rgba(17,24,39,.28);
+    filter: drop-shadow(0 4px 7px rgba(17,24,39,.09));
+    pointer-events: none;
+  }
+
+  .nav::after {
+    content: "";
+    position: absolute;
+    inset: 1px;
+    z-index: 0;
+    clip-path: polygon(0 0, calc(100% - 13px) 0, 100% 50%, calc(100% - 13px) 100%, 0 100%, 10px 50%);
+    background:
+      linear-gradient(90deg, transparent, rgba(93,109,124,.38), transparent) center bottom / 58% 1px no-repeat,
+      linear-gradient(180deg, rgba(255,255,255,.82), rgba(239,237,232,.76));
+    pointer-events: none;
+  }
+
+  .nav a {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 13px;
+    border-radius: 3px;
+    color: rgba(17, 24, 39, 0.78);
+    transition: color .2s ease, background .2s ease, box-shadow .2s ease, transform .2s ease;
+  }
+
+  .nav a:not(:first-child)::before {
+    content: "";
+    position: absolute;
+    top: 22%;
+    left: 0;
+    width: 2px;
+    height: 56%;
+    background: linear-gradient(180deg, transparent, rgba(93,109,124,.38), transparent);
+    pointer-events: none;
+  }
+
+  .nav-label {
+    position: relative;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: .01em;
+    transition: transform .28s var(--ease), letter-spacing .28s var(--ease), color .2s ease;
+  }
+
+  .nav-label::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -6px;
+    left: 0;
+    height: 1px;
+    background: var(--accent);
+    opacity: 0;
+    transform: scaleX(.25);
+    transform-origin: left;
+    transition: transform .28s var(--ease), opacity .2s ease;
+  }
+
+  .nav a:hover,
+  .nav a:focus-visible {
+    color: var(--dark);
+    background: rgba(255,255,255,.72);
+    box-shadow: 0 1px 4px rgba(17,24,39,.055), inset 0 0 0 1px rgba(17,24,39,.035);
+  }
+
+  .nav a:hover .nav-label,
+  .nav a:focus-visible .nav-label {
+    transform: translateY(-2px);
+    letter-spacing: .025em;
+  }
+
+  .nav a:hover .nav-label::after,
+  .nav a:focus-visible .nav-label::after {
+    opacity: .72;
+    transform: scaleX(1);
+  }
+
+  .nav a:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+
+  .menu-toggle {
+    display: none;
+    width: 42px;
+    height: 42px;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+  }
+
+  .menu-toggle span {
+    display: block;
+    width: 22px;
+    height: 1px;
+    margin: 6px auto;
+    background: #111;
+    transition: transform .25s;
+  }
+
+  .menu-toggle[aria-expanded="true"] span:first-child {
+    transform: translateY(3.5px) rotate(45deg);
+  }
+
+  .menu-toggle[aria-expanded="true"] span:last-child {
+    transform: translateY(-3.5px) rotate(-45deg);
+  }
+
+  .hero {
+    min-height: 100vh;
+    padding: 170px 32px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    isolation: isolate;
+  }
+
+  .hero-grid {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, rgba(0,0,0,.03) 1px, transparent 1px), linear-gradient(to bottom, rgba(0,0,0,.03) 1px, transparent 1px);
+    background-size: 64px 64px;
+    opacity: .38;
+    z-index: 0;
+  }
+
+  .hero-orb {
+    position: absolute;
+    border-radius: 50%;
+    z-index: -2;
+    opacity: .45;
+  }
+
+  .hero-orb-one {
+    width: 360px;
+    height: 360px;
+    right: 5%;
+    top: 18%;
+    background: radial-gradient(circle, #fff, rgba(215,215,208,.15) 65%, transparent 70%);
+  }
+
+  .hero-orb-two {
+    width: 260px;
+    height: 260px;
+    left: 30%;
+    bottom: 2%;
+    background: radial-gradient(circle, #fff, transparent 70%);
+  }
+
+  .hero-inner,
+  .hero-line,
+  .hero-meta {
+    position: relative;
+    z-index: 2;
+  }
+
+  .hero-inner {
+    width: min(100%, var(--max-width));
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1.35fr .65fr;
+    align-items: end;
+    gap: 40px;
+    padding-bottom: 12px;
+  }
+
+  .hero-copy {
+    min-width: 0;
+  }
+
+  .hero-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 35px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: .16em;
+    color: #666;
+  }
+
+  .hero-label-line {
+    width: 28px;
+    height: 1px;
+    background: #111;
+  }
+
+  .status-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #4d9f6e;
+    box-shadow: 0 0 0 5px rgba(77,159,110,.08);
+  }
+
+  .hero h1 {
+    font-size: clamp(4.5rem,7vw,10.5rem);
+    line-height: .84;
+    letter-spacing: -.08em;
+    font-weight: 700;
+    max-width: 1100px;
+    color: #111827;
+  }
+
+  .hero-kicker {
+    display: block;
+    margin-bottom: 22px;
+    font-size: 11px;
+    line-height: 1;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    color: #697783;
+    font-weight: 600;
+  }
+
+  .hero h1 span:not(.hero-kicker) {
+    color: rgba(17,24,39,0.6);
+  }
+
+  .hero-bottom {
+    margin-top: 65px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    max-width: 980px;
+    gap: 30px;
+  }
+
+  .hero-description {
+    max-width: 540px;
+    font-size: 15px;
+    color: #60605c;
+    line-height: 2;
+  }
+
+  .hero-actions {
+    display: flex;
+    align-items: flex-end;
+    gap: 32px;
+    flex-wrap: wrap;
+    margin-left: auto;
+  }
+
+  .text-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 18px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #111;
+    font-size: 13px;
+    font-weight: 600;
+    transition: gap .3s var(--ease);
+  }
+
+  .text-link:hover {
+    gap: 28px;
+  }
+
+  .text-link span {
+    font-size: 18px;
+  }
+
+  .text-link-secondary {
+    color: #777;
+    border-bottom-color: #bdbdb7;
+  }
+
+  .text-link-secondary:hover {
+    color: #111;
+  }
+
+  .hero-panel {
+    justify-self: end;
+    width: min(100%, 340px);
+    padding: 20px 20px 16px;
+    border: 1px solid rgba(17,24,39,.1);
+    background: rgba(255,255,255,.42);
+    backdrop-filter: blur(6px);
+    box-shadow: 0 20px 42px rgba(17,24,39,.04);
+    --project-surface-1: #eeebe4;
+    --project-surface-2: #f4f2ee;
+    --project-surface-3: #e4e0d9;
+    --project-accent: rgba(17,17,17,.05);
+  }
+
+  .hero-panel-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 10px;
+    letter-spacing: .14em;
+    color: #6a6a62;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+  }
+
+  .hero-panel-visual {
+    position: relative;
+    height: 180px;
+    border: 1px solid rgba(17,17,17,.08);
+    background: linear-gradient(135deg, var(--project-surface-1), var(--project-surface-2) 45%, var(--project-surface-3));
+    overflow: hidden;
+  }
+
+  .panel-shape {
+    position: absolute;
+    display: block;
+    border-radius: 50%;
+    border: 1px solid rgba(17,17,17,.08);
+  }
+
+  .panel-shape-one {
+    width: 200px;
+    height: 200px;
+    left: -20px;
+    top: 18px;
+  }
+
+  .panel-shape-two {
+    width: 120px;
+    height: 120px;
+    right: 18px;
+    bottom: 10px;
+    background: rgba(255,255,255,.24);
+  }
+
+  .panel-shape-three {
+    width: 80px;
+    height: 80px;
+    left: 110px;
+    top: 35px;
+    background: var(--project-accent);
+  }
+
+  .hero-panel-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding-top: 18px;
+  }
+
+  .hero-panel-meta strong {
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: -.04em;
+    font-family: "Cormorant Garamond", "Noto Sans JP", serif;
+    font-weight: 600;
+    font-size: 2.05rem;
+    line-height: 0.96;
+  }
+
+  .hero-panel-meta small {
+    font-size: 11px;
+    color: #6d6d67;
+  }
+
+  .hero-line {
+    width: min(calc(100% - 64px), var(--max-width));
+    height: 1px;
+    margin: 80px auto 0;
+    background: var(--line);
+  }
+
+  .hero-meta {
+    width: min(calc(100% - 64px), var(--max-width));
+    margin: 18px auto 0;
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+    letter-spacing: .13em;
+    color: #888;
+  }
+
+  .section {
+    width: min(calc(100% - 64px), var(--max-width));
+    margin: auto;
+    padding: 128px 0;
+    position: relative;
+    z-index: 1;
+  }
+
+  .section-heading {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    align-items: baseline;
+    align-items: center;
+    gap: 18px;
+    min-height: 76px;
+    padding: 12px 20px;
+    border: 1px solid rgba(17,24,39,.13);
+    border-left: 2px solid var(--accent);
+    border-radius: var(--radius-control);
+    background: rgba(255,255,255,.38);
+    box-shadow: 0 4px 14px rgba(17,24,39,.025);
+  }
+
+  .section-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    min-height: 30px;
+    border: 1px solid rgba(17,24,39,.15);
+    background: rgba(255,255,255,.4);
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--accent);
+    letter-spacing: .1em;
+  }
+
+  .section-heading h1,
+  .section-heading h2 {
+    font-size: 32px;
+    font-weight: 650;
+    letter-spacing: -.035em;
+    line-height: 1.15;
+  }
+
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.08fr;
+    gap: 72px;
+    padding-top: 48px;
+    min-height: 540px;
+  }
+
+  .large-text {
+    font-size: clamp(40px,3.8vw,54px);
+    line-height: 1.16;
+    letter-spacing: -.065em;
+    font-weight: 500;
+  }
+
+  .large-text em {
+    color: #8b8b86;
+    font-style: normal;
+  }
+
+  .about-accent-line {
+    display: block;
+    width: 56px;
+    height: 2px;
+    margin-top: 42px;
+    background: #a7a7a1;
+  }
+
+  .about-description {
+    max-width: 540px;
+    margin-top: 28px;
+  }
+
+  .about-description p {
+    margin-bottom: 26px;
+    font-size: 15px;
+    color: #5f5f5b;
+    line-height: 2;
+  }
+
+  .about-scroll-cue {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    margin-top: auto;
+    padding-top: 65px;
+    font-size: 9px;
+    letter-spacing: .17em;
+    color: #8a8a84;
+  }
+
+  .about-scroll-line {
+    width: 40px;
+    height: 1px;
+    background: #8a8a84;
+  }
+
+  .about-scroll-arrow {
+    margin-left: 2px;
+    font-size: 17px;
+    line-height: 1;
+    color: #666;
+    animation: floatArrow 1.8s ease-in-out infinite;
+  }
+
+  .about-info {
+    margin-top: 0;
+    border-top: 1px solid var(--line);
+  }
+
+  .info-row {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    align-items: center;
+    min-height: 71px;
+    padding: 16px 0;
+    border-bottom: 1px solid var(--line);
+    font-size: 15px;
+    transition: .3s var(--ease);
+  }
+
+  .info-row:hover {
+    padding-left: 8px;
+    background: rgba(255,255,255,.35);
+  }
+
+  .info-row span {
+    color: #92928c;
+    font-size: 10px;
+    letter-spacing: .17em;
+  }
+
+  .about-channels {
+    width: 100%;
+    margin-top: 38px;
+    padding: 0 24px;
+    border: 1px solid rgba(17,24,39,.08);
+    border-radius: var(--radius-panel);
+    background: rgba(255,255,255,.24);
+    box-shadow: 0 5px 18px rgba(17,24,39,.025);
+  }
+
+  .about-channels-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 24px 0 18px;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .about-channels-heading > span {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: .18em;
+  }
+
+  .about-channels-heading p {
+    margin: 0;
+    font-size: 11px;
+    color: #888883;
+  }
+
+  .about-channel-list {
+    width: 100%;
+  }
+
+  .about-channel {
+    display: grid;
+    grid-template-columns: 52px minmax(180px,1fr) minmax(170px,1fr) auto 20px;
+    align-items: center;
+    gap: 16px;
+    min-height: 84px;
+    border-bottom: 1px solid #e1e1dc;
+    transition: .3s var(--ease);
+  }
+
+  .about-channel:last-child {
+    border-bottom: 0;
+  }
+
+  .about-channel:hover {
+    transform: translateX(6px);
+    background: rgba(255,255,255,.45);
+  }
+
+  .about-channel-icon {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(17,24,39,.12);
+    border-radius: var(--radius-control);
+    background: rgba(255,255,255,.48);
+    color: var(--dark);
+  }
+
+  .about-channel-icon svg {
+    width: 22px;
+    height: 22px;
+  }
+
+  .about-channel-icon-x {
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: -.08em;
+  }
+
+  .about-channel-main {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    min-width: 0;
+  }
+
+  .about-channel-main strong {
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  .about-channel-main small {
+    font-size: 11px;
+    color: #8a8a85;
+  }
+
+  .about-channel-destination {
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 11px;
+    color: #555550;
+  }
+
+  .about-channel-status {
+    padding: 5px 10px;
+    border: 1px solid rgba(17,24,39,.12);
+    border-radius: 2px;
+    background: rgba(255,255,255,.38);
+    color: #6e746e;
+    font-size: 8px;
+    font-weight: 600;
+    letter-spacing: .13em;
+    white-space: nowrap;
+  }
+
+  .about-channel-arrow {
+    font-size: 17px;
+    color: #555;
+    transition: transform .3s var(--ease);
+  }
+
+  .about-channel:hover .about-channel-arrow {
+    transform: translate(3px,-3px);
+  }
+
+  .skills,
+  .services,
+  .works,
+  .process {
+    border-top: 1px solid var(--line);
+  }
+
+  .skills-intro {
+    max-width: 530px;
+    margin: 55px 0 80px 80px;
+  }
+
+  .skills-intro p {
+    color: #666;
+    font-size: 14px;
+    line-height: 2;
+  }
+
+  .skills-list {
+    border-top: 1px solid var(--line);
+  }
+
+  .skill-group {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    padding: 28px 18px;
+    border-bottom: 1px solid var(--line);
+    transition: background .25s ease, padding-left .25s var(--ease);
+  }
+
+  .skill-group:hover {
+    padding-left: 24px;
+    background: rgba(255,255,255,.32);
+  }
+
+  .skill-index {
+    font-size: 11px;
+    color: #999;
+  }
+
+  .skill-group h3 {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .skill-tags span {
+    padding: 7px 13px;
+    border: 1px solid rgba(17,24,39,.13);
+    border-radius: 2px;
+    background: rgba(255,255,255,.28);
+    font-size: 11px;
+    color: #555;
+    transition: .25s;
+  }
+
+  .skill-tags span:hover {
+    background: var(--dark);
+    color: #fff;
+    border-color: var(--dark);
+  }
+
+  .certifications {
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    margin-top: 65px;
+  }
+
+  .cert-label {
+    font-size: 10px;
+    color: #92928c;
+    letter-spacing: .1em;
+  }
+
+  .cert-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 30px;
+    font-size: 13px;
+    color: #555;
+  }
+
+  .services-intro {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin: 55px 0 35px 80px;
+  }
+
+  .services-intro span {
+    font-size: 10px;
+    letter-spacing: .13em;
+    color: #999;
+  }
+
+  .services-intro p {
+    max-width: 480px;
+    font-size: 14px;
+    color: #666;
+  }
+
+  .services-list {
+    border-top: 1px solid var(--line);
+  }
+
+  .service {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    padding: 30px 18px;
+    border: 1px solid rgba(17,24,39,.08);
+    border-radius: var(--radius-control);
+    background: rgba(255,255,255,.3);
+    margin-bottom: 12px;
+    transition: border-color .25s ease, background .25s ease, transform .25s var(--ease);
+  }
+
+  .service:hover {
+    transform: translateX(4px);
+    border-color: rgba(93,109,124,.32);
+    background: rgba(255,255,255,.48);
+  }
+
+  .service-top {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 40px;
+  }
+
+  .service-number {
+    font-size: 11px;
+    color: #999;
+  }
+
+  .service-arrow {
+    font-size: 18px;
+    color: #888;
+    transition: transform .3s var(--ease);
+  }
+
+  .service:hover .service-arrow {
+    transform: translate(4px,-4px);
+  }
+
+  .service-body {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr 1fr;
+    align-items: start;
+    gap: 40px;
+  }
+
+  .service-body h3 {
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: -.04em;
+  }
+
+  .service-body p {
+    max-width: 430px;
+    font-size: 13px;
+    color: #666;
+    line-height: 2;
+  }
+
+  .service-tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 7px;
+  }
+
+  .service-tags span {
+    padding: 5px 10px;
+    background: #e9e9e5;
+    font-size: 10px;
+    color: #666;
+  }
+
+  .process-intro {
+    margin: 55px 0 45px 80px;
+  }
+
+  .process-intro p {
+    color: #666;
+    font-size: 14px;
+  }
+
+  .process-list {
+    border-top: 1px solid var(--line);
+  }
+
+  .process-step {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 30px;
+    padding: 32px 0;
+    border-bottom: 1px solid var(--line);
+    transition: padding-left .3s var(--ease);
+  }
+
+  .process-step:hover {
+    padding-left: 12px;
+  }
+
+  .process-step > span {
+    font-size: 10px;
+    color: #999;
+    letter-spacing: .1em;
+  }
+
+  .process-step h3 {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    letter-spacing: -.03em;
+  }
+
+  .process-step p {
+    color: #666;
+    font-size: 13px;
+  }
+
+  .works-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 55px 0 60px 80px;
+  }
+
+  .works-header p {
+    max-width: 460px;
+    font-size: 14px;
+    color: #666;
+    line-height: 2;
+  }
+
+  .works-count {
+    font-size: 10px;
+    color: #999;
+    letter-spacing: .1em;
+  }
+
+  .works-list {
+    border-top: 1px solid var(--line);
+  }
+
+  .work {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    border: 1px solid rgba(17,24,39,.08);
+    border-radius: var(--radius-control);
+    overflow: hidden;
+    background: rgba(255,255,255,.22);
+    box-shadow: 0 8px 24px rgba(17,24,39,.035);
+    margin-bottom: 18px;
+  }
+
+  .work-visual {
+    min-height: 460px;
+    padding: 25px;
+    background: linear-gradient(135deg, #ece8e1 0%, #f4f2ef 48%, #e3e0dc 100%);
+    overflow: hidden;
+  }
+
+  .visual-placeholder {
+    width: 100%;
+    height: 100%;
+    min-height: 410px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    background:
+      linear-gradient(to right, rgba(17,24,39,.035) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(17,24,39,.035) 1px, transparent 1px),
+      linear-gradient(135deg, #e7e5df, #f3f1ec 54%, #dfdfda);
+    background-size: 32px 32px, 32px 32px, auto;
+    color: #9a9a94;
+    transition: background-color .35s ease;
+  }
+
+  .visual-placeholder::before,
+  .visual-placeholder::after {
+    content: "";
+    position: absolute;
+    pointer-events: none;
+  }
+
+  .visual-placeholder::before {
+    width: min(76%, 560px);
+    height: 68%;
+    border: 1px solid rgba(17,24,39,.13);
+    border-radius: 3px;
+    background:
+      linear-gradient(rgba(17,24,39,.12),rgba(17,24,39,.12)) 18px 16px / 31% 4px no-repeat,
+      linear-gradient(rgba(17,24,39,.08),rgba(17,24,39,.08)) right 18px top 16px / 22% 4px no-repeat,
+      linear-gradient(rgba(17,24,39,.2),rgba(17,24,39,.2)) 18px 48px / 42% 9px no-repeat,
+      linear-gradient(rgba(17,24,39,.09),rgba(17,24,39,.09)) 18px 68px / 34% 4px no-repeat,
+      linear-gradient(rgba(17,24,39,.07),rgba(17,24,39,.07)) 18px 78px / 27% 4px no-repeat,
+      linear-gradient(135deg, rgba(93,109,124,.2), rgba(93,109,124,.06)) right 18px top 42px / 32% calc(100% - 58px) no-repeat,
+      rgba(255,255,255,.72);
+    box-shadow: 0 14px 35px rgba(17,24,39,.07);
+  }
+
+  .visual-placeholder::after {
+    right: 15%;
+    bottom: 14%;
+    width: 20%;
+    height: 12%;
+    border: 1px solid rgba(17,24,39,.12);
+    border-radius: 2px;
+    background: rgba(247,246,242,.92);
+    box-shadow: 0 8px 18px rgba(17,24,39,.07);
+  }
+
+  .work:hover .visual-placeholder {
+    background-color: rgba(255,255,255,.22);
+  }
+
+  .visual-placeholder span {
+    position: absolute;
+    left: 6%;
+    bottom: 7%;
+    z-index: 1;
+    padding: 5px 8px;
+    border: 1px solid rgba(17,24,39,.12);
+    background: rgba(255,255,255,.62);
+    color: #6f777c;
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: .12em;
+  }
+
+  .work:nth-child(2) .visual-placeholder {
+    background:
+      linear-gradient(to right, rgba(17,24,39,.035) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(17,24,39,.035) 1px, transparent 1px),
+      linear-gradient(135deg, #e4e2dc, #eeece7 52%, #d9dedc);
+    background-size: 32px 32px, 32px 32px, auto;
+  }
+
+  .work:nth-child(2) .visual-placeholder::before {
+    background:
+      linear-gradient(rgba(17,24,39,.12),rgba(17,24,39,.12)) 18px 16px / 31% 4px no-repeat,
+      linear-gradient(rgba(17,24,39,.08),rgba(17,24,39,.08)) right 18px top 16px / 22% 4px no-repeat,
+      linear-gradient(rgba(17,24,39,.2),rgba(17,24,39,.2)) 18px 48px / 42% 9px no-repeat,
+      linear-gradient(rgba(17,24,39,.09),rgba(17,24,39,.09)) 18px 68px / 34% 4px no-repeat,
+      linear-gradient(rgba(17,24,39,.07),rgba(17,24,39,.07)) 18px 78px / 27% 4px no-repeat,
+      linear-gradient(135deg, rgba(122,126,112,.2), rgba(122,126,112,.06)) right 18px top 42px / 32% calc(100% - 58px) no-repeat,
+      rgba(255,255,255,.72);
+  }
+
+  .work-info {
+    padding: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .work-meta {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+    font-size: 10px;
+    color: #999;
+    letter-spacing: .1em;
+  }
+
+  .work-info h3 {
+    margin-bottom: 20px;
+    font-size: 34px;
+    font-weight: 500;
+    letter-spacing: -.045em;
+  }
+
+  .work-info p {
+    max-width: 330px;
+    margin-bottom: 35px;
+    font-size: 13px;
+    color: #666;
+    line-height: 2;
+  }
+
+  .work-status {
+    padding: 6px 10px;
+    border: 1px solid #d0d0cb;
+    font-size: 9px;
+    letter-spacing: .1em;
+    color: #999;
+  }
+
+  .contact {
+    padding: 160px 32px;
+    background: var(--dark);
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .contact::before {
+    content: "";
+    position: absolute;
+    width: min(42vw, 560px);
+    height: 100%;
+    right: 0;
+    top: 0;
+    border-left: 1px solid rgba(255,255,255,.12);
+    background-image:
+      linear-gradient(to right, rgba(255,255,255,.035) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255,255,255,.035) 1px, transparent 1px);
+    background-size: 48px 48px;
+    opacity: .72;
+    pointer-events: none;
+  }
+
+  .contact-inner {
+    width: min(100%, var(--max-width));
+    margin: auto;
+    position: relative;
+  }
+
+  .contact-label {
+    display: block;
+    margin-bottom: 65px;
+    font-size: 10px;
+    letter-spacing: .14em;
+    color: #777;
+  }
+
+  .contact h2 {
+    font-size: clamp(55px,8vw,110px);
+    line-height: .98;
+    letter-spacing: -.07em;
+    font-weight: 500;
+  }
+
+  .contact h2 em {
+    color: #777;
+    font-style: normal;
+  }
+
+  .contact p {
+    max-width: 500px;
+    margin-top: 55px;
+    font-size: 14px;
+    color: #aaa;
+    line-height: 2;
+  }
+
+  .contact-button {
+    width: 100%;
+    max-width: 650px;
+    margin-top: 55px;
+    padding: 23px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #555;
+    font-size: 14px;
+    transition: .35s var(--ease);
+  }
+
+  .contact-button:hover {
+    background: #fff;
+    color: #111;
+    transform: translateY(-4px);
+  }
+
+  .contact-button span:last-child {
+    font-size: 20px;
+  }
+
+  .contact-links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 45px;
+  }
+
+  .contact-links-label {
+    font-size: 9px;
+    letter-spacing: .15em;
+    color: #666;
+  }
+
+  .contact-links a {
+    font-size: 12px;
+    color: #888;
+    border-bottom: 1px solid #555;
+    padding-bottom: 3px;
+  }
+
+  .contact-links a:hover {
+    color: #fff;
+  }
+
+  .footer {
+    background: var(--dark);
+    color: #666;
+  }
+
+  .footer-inner {
+    width: min(calc(100% - 64px), var(--max-width));
+    margin: auto;
+    padding: 25px 0;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #292929;
+    font-size: 10px;
+    letter-spacing: .05em;
+  }
+
+  .back-to-top {
+    position: fixed;
+    right: 28px;
+    bottom: 28px;
+    z-index: 900;
+    width: 48px;
+    height: 48px;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 50%;
+    background: rgba(244,244,241,.82);
+    backdrop-filter: blur(12px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: .3s var(--ease);
+  }
+
+  .back-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  .reveal {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity .8s var(--ease), transform .8s var(--ease);
+  }
+
+  .reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  @keyframes floatArrow {
+    50% {
+      transform: translateY(5px);
+    }
+  }
+
+  @media (max-width: 900px) {
+    .hero-inner {
+      grid-template-columns: 1fr;
+      gap: 28px;
+    }
+
+    .hero-panel {
+      justify-self: start;
+      width: min(100%, 420px);
+    }
+
+    .about-grid {
+      gap: 60px;
+    }
+
+    .about-channel {
+      grid-template-columns: 44px 1fr auto 18px;
+    }
+
+    .about-channel-destination {
+      display: none;
+    }
+
+    .header-inner {
+      width: calc(100% - 40px);
+    }
+
+    .nav {
+      gap: 0;
+    }
+
+    .section {
+      width: calc(100% - 40px);
+      padding: 110px 0;
+    }
+
+    .service-body {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .service-tags {
+      grid-column: 2;
+      justify-content: flex-start;
+    }
+
+    .work {
+      grid-template-columns: 1fr;
+    }
+
+    .work-visual {
+      min-height: 350px;
+    }
+
+    .visual-placeholder {
+      min-height: 300px;
+    }
+
+    .work-info {
+      padding: 35px;
+    }
+  }
+
+  @media (max-width: 700px) {
+    .cursor-glow {
+      display: none;
+    }
+
+    .header-inner {
+      height: 72px;
+    }
+
+    .nav {
+      position: fixed;
+      top: 72px;
+      left: 0;
+      width: 100%;
+      padding: 25px 20px;
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0;
+      height: auto;
+      padding: 25px 20px;
+      background: rgba(244,244,241,.97);
+      backdrop-filter: blur(15px);
+      border: 0;
+      border-bottom: 1px solid var(--line);
+      border-radius: 0;
+      box-shadow: none;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-10px);
+      transition: .25s;
+    }
+
+    .nav::before {
+      display: none;
+    }
+
+    .nav::after {
+      display: none;
+    }
+
+    .nav.active {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    .nav a {
+      display: grid;
+      grid-template-columns: 1fr;
+      align-items: center;
+      gap: 0;
+      min-width: 0;
+      height: auto;
+      margin-left: 0;
+      padding: 15px 8px;
+      clip-path: none;
+      border-radius: 0;
+      border-bottom: 1px solid var(--line);
+      box-shadow: none;
+      background: transparent;
+      color: rgba(17,24,39,.76);
+    }
+
+    .nav a:hover,
+    .nav a:focus-visible {
+      color: var(--dark);
+      background: transparent;
+      box-shadow: none;
+      transform: none;
+    }
+
+    .nav-label::after {
+      display: none;
+    }
+
+    .nav a::before {
+      display: none;
+    }
+
+    .nav-label {
+      font-size: 14px;
+      letter-spacing: 0;
+      text-transform: none;
+    }
+
+    .menu-toggle {
+      display: block;
+    }
+
+    .hero {
+      min-height: 100svh;
+      padding: 130px 20px 30px;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      line-height: .92;
+      letter-spacing: -.065em;
+    }
+
+    .hero-kicker {
+      font-size: 9px;
+    }
+
+    .hero-bottom {
+      display: block;
+      margin-top: 45px;
+    }
+
+    .hero-description {
+      font-size: 13px;
+    }
+
+    .hero-actions {
+      display: block;
+    }
+
+    .text-link {
+      margin-top: 30px;
+    }
+
+    .text-link-secondary {
+      margin-top: 22px;
+    }
+
+    .hero-line,
+    .hero-meta {
+      width: calc(100% - 40px);
+    }
+
+    .hero-meta {
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .section {
+      width: calc(100% - 40px);
+      padding: 90px 0;
+    }
+
+    .section-heading {
+      grid-template-columns: 50px 1fr;
+      gap: 10px;
+      min-height: 72px;
+      padding: 12px 14px;
+    }
+
+    .section-heading h1,
+    .section-heading h2 {
+      font-size: 28px;
+    }
+
+    .about-grid {
+      grid-template-columns: 1fr;
+      gap: 55px;
+      padding-top: 55px;
+      min-height: auto;
+    }
+
+    .large-text {
+      font-size: 34px;
+    }
+
+    .about-description p {
+      font-size: 13px;
+    }
+
+    .about-scroll-cue {
+      margin-top: 45px;
+      padding-top: 0;
+    }
+
+    .info-row {
+      grid-template-columns: 105px 1fr;
+      gap: 10px;
+      font-size: 12px;
+    }
+
+    .about-channels {
+      margin-top: 30px;
+      padding: 0 18px;
+    }
+
+    .about-channels-heading {
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 6px;
+      padding: 20px 0 15px;
+    }
+
+    .about-channel {
+      grid-template-columns: 42px minmax(0,1fr) auto 18px;
+      gap: 12px;
+      min-height: 78px;
+    }
+
+    .about-channel-icon {
+      width: 36px;
+      height: 36px;
+    }
+
+    .about-channel-main strong {
+      font-size: 13px;
+    }
+
+    .about-channel-main small {
+      font-size: 10px;
+    }
+
+    .about-channel-destination {
+      display: none;
+    }
+
+    .about-channel-status {
+      padding: 4px 8px;
+      font-size: 7px;
+    }
+
+    .skills-intro {
+      margin: 40px 0 55px 50px;
+    }
+
+    .skill-group {
+      grid-template-columns: 50px 1fr;
+    }
+
+    .skill-group h3 {
+      font-size: 16px;
+    }
+
+    .certifications {
+      grid-template-columns: 100px 1fr;
+    }
+
+    .cert-list {
+      display: block;
+    }
+
+    .cert-list span {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .services-intro {
+      margin-left: 50px;
+      display: block;
+    }
+
+    .services-intro p {
+      margin-top: 12px;
+    }
+
+    .service {
+      grid-template-columns: 50px 1fr;
+    }
+
+    .service-top {
+      padding-right: 15px;
+    }
+
+    .service-body {
+      display: block;
+    }
+
+    .service-body h3 {
+      font-size: 22px;
+      margin-bottom: 18px;
+    }
+
+    .service-body p {
+      margin-bottom: 20px;
+    }
+
+    .service-tags {
+      justify-content: flex-start;
+    }
+
+    .process-intro {
+      margin-left: 50px;
+    }
+
+    .process-step {
+      grid-template-columns: 50px 1fr;
+      gap: 10px;
+    }
+
+    .works-header {
+      margin-left: 50px;
+      display: block;
+    }
+
+    .works-count {
+      display: block;
+      margin-top: 20px;
+    }
+
+    .work-visual {
+      padding: 12px;
+      min-height: 250px;
+    }
+
+    .visual-placeholder {
+      min-height: 220px;
+    }
+
+    .work-info {
+      padding: 30px 20px;
+    }
+
+    .work-meta {
+      margin-bottom: 55px;
+    }
+
+    .work-info h3 {
+      font-size: 28px;
+    }
+
+    .contact {
+      padding: 110px 20px;
+    }
+
+    .contact-label {
+      margin-bottom: 45px;
+    }
+
+    .contact h2 {
+      font-size: clamp(48px,14vw,75px);
+    }
+
+    .contact p {
+      font-size: 13px;
+      margin-top: 40px;
+    }
+
+    .contact-links {
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    .footer-inner {
+      width: calc(100% - 40px);
+    }
+
+    .back-to-top {
+      right: 18px;
+      bottom: 18px;
+    }
+  }
+
+  @media (prefers-reduced-motion:reduce) {
+    *, *::before, *::after {
+      scroll-behavior: auto !important;
+      animation: none !important;
+      transition-duration: .01ms !important;
+    }
+  }
+</style>
